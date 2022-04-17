@@ -1,0 +1,231 @@
+* {
+    font-family: 'Karla', sans-serif;;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: hsl(204, 43%, 93%);
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-container {
+    width: 40em;
+    position: relative;
+    border-radius: .5em;
+    box-shadow: 0px 7px 17px -2px hsla(202, 10%, 67%, 0.859);
+}
+
+/* CARD ONE */
+
+.cards-container .card1 {
+    background: #fff;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.cards-container .card1 h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.cards-container .card1 h3{
+    color: hsl(71, 73%, 54%);
+    margin: .8em 0;
+}
+
+.cards-container .card1 p {
+    color: hsl(218, 22%, 67%);
+}
+
+
+/* CARD TWO */
+
+.cards-container .card2 {
+    border-bottom-left-radius: .5em;
+}
+
+.cards-container .card2 .content-card2 .plan-price {
+    margin: .8em 0 .3em;
+    font-size: 1.8em;
+}
+
+.cards-container .card2 .content-card2 .plan-price span {
+    color: hsl(202, 7%, 78%);
+    font-size: .5em;
+    position: relative;
+    top: -.3em;
+}
+
+.cards-container .card2 .content-card2 .plan-features {
+    margin-bottom: 1.5em;
+}
+
+.cards-container .card2 .content-card2 a {
+    display: block;
+    width: max-content;
+    text-decoration: none;
+}
+
+.cards-container .card2 .content-card2 a #button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15em;
+    height: 3em;
+    font-weight: 700;
+    background: hsl(71, 73%, 54%);
+    color: #fff;
+    border-radius: .3em;
+}
+
+.cards-container .card2 .content-card2 #button:hover {
+    background: #fff;
+    color: hsl(71, 73%, 54%);
+}
+
+/* CARD THREE */
+
+.cards-container .card3 {
+    float: right;
+    opacity: .7;
+    border-bottom-right-radius: .5em;
+}
+
+.cards-container .card3 p {
+    width: 14em;
+    margin: .8em 0;
+    color: hsl(202, 7%, 78%);
+}
+
+.cards-container .card1 .content-card1, .content-card2, .content-card3 {
+    padding: 2em;
+}
+
+/* OTHERS */
+
+.cards-container .card2, .card3 {
+    width: 50%;
+    height: 15em;
+    display: inline-block;
+    background: hsl(179, 62%, 43%);
+    color: #fff;
+}
+
+@media (max-width:700px) {
+
+    .main-container {
+        display: block;
+        width: max-content;
+        height: max-content;
+        margin: 3.5em auto;
+    }
+
+    .cards-container {
+        width: max-content;
+    }
+
+    .cards-container .card1 {
+        border-top-right-radius: .5em;    
+        border-top-left-radius: .5em;
+    }
+
+    .cards-container .card2 {
+        display: block;
+        width: 25em;
+        border-bottom-left-radius: 0;
+
+    }
+    
+    .cards-container .card3 {
+        float: none;
+        border-bottom-left-radius: .5em;
+    }
+
+    .cards-container .content-card1, .content-card2, .content-card3 {
+        padding: 1.75em;
+    }
+
+    .cards-container .card1, .card2, .card3 {
+        width: 25em;
+    }
+
+    .cards-container .card2 .content-card2 a {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:500px ) {
+    
+    .main-container {
+        margin: 3.5em auto;
+    }
+
+    .cards-container .card2 {
+        width: 25em;
+    }
+
+    .cards-container .content-card1, .content-card2, .content-card3 {
+        padding: 1.75em;
+    }
+
+    .cards-container .card1, .card2, .card3 {
+        width: 25em;
+    }
+
+}
+
+
+@media (max-width:475px) {
+    .main-container {
+        margin: 3em auto;
+    }
+
+    .cards-container .card2 {
+        width: 23em;
+    }
+    
+    .cards-container .content-card1, .content-card2, .content-card3 {
+        padding: 1.75em;
+    }
+
+    .cards-container .card1, .card2, .card3 {
+        width: 23em;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .main-container {
+        margin: 2em auto;
+    }
+
+    .cards-container .card2 {
+        width: 21em;
+    }
+
+    .cards-container .card1, .card2, .card3 {
+        width: 21em;
+    }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+    .cards-container .card2 {
+        width: 20em;
+    }
+
+    .cards-container .card1, .card2, .card3 {
+        width: 20em;
+    }
+
+}
