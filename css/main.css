@@ -34,9 +34,10 @@ body {
     color: hsl(179, 62%, 43%);
 }
 
-.cards-container .card1 h3{
+.cards-container .card1 h2{
     color: hsl(71, 73%, 54%);
     margin: .8em 0;
+    font-size: 1.35em;
 }
 
 .cards-container .card1 p {
